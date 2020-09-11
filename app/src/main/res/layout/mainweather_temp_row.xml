@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:background="@color/wh"
+    android:orientation="vertical">
+        <TextView
+            android:id="@+id/mainweather_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="온도"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanumb"
+            android:textSize="18dp" />
+        <ImageView
+            android:id="@+id/weather_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="이미지" />
+        <TextView
+            android:id="@+id/mainweather_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="시간"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanumb"
+            android:textSize="18dp" />
+</LinearLayout>

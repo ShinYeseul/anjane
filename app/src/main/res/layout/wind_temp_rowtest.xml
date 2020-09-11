@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/wh"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerlayout_windtest"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/imgwindtest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/wind" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/wind_warnStresstest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="강풍주의보"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/nanumb"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/wind_warnStress_infotest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="풍속이 14m/s 이상"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/nanumb"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/wind_areaCodetesttest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="부천시"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nanumb"
+                android:textSize="15dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/wind_tmFctest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2020-07-07 05:00"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/nanumb"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/winddropdowntest"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:background="@drawable/downarrow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="41dp"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:id="@+id/detaillayout_windtest">
+        <TextView
+            android:id="@+id/wind_areatest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:layout_marginLeft="34dp"
+
+            android:fontFamily="@font/nanumb"
+            android:text="지역이름: 부천시"/>
+        <TextView
+            android:id="@+id/wind_startTimetest"
+            android:layout_width="match_parent"
+            android:textColor="@color/blue"
+            android:layout_marginLeft="34dp"
+
+            android:fontFamily="@font/nanumb"
+            android:layout_height="wrap_content"
+            android:text="발효시각 : 2020-07-07 05:00"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="3dp"
+        android:background="#EAEAEA"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerlayout_windtest2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imgwindtest2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/wind_blue" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/wind_warnStresstest2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="경보"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/nanumb"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/wind_warnStress_infotest2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="풍속이 21m/s 이상"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/nanumb"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/wind_areaCodetesttest2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="서울특별시"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nanumb"
+                android:textSize="15dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/wind_tmFctest2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2020-07-07 06:00"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/nanumb"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/winddropdowntest2"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:background="@drawable/downarrow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="41dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/detaillayout_windtest2">
+        <TextView
+            android:id="@+id/wind_areatest2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:layout_marginLeft="34dp"
+            android:fontFamily="@font/nanumb"
+            android:text="지역이름: 서울특별시"/>
+        <TextView
+            android:id="@+id/wind_startTimetest2"
+            android:layout_width="match_parent"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/nanumb"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34dp"
+            android:text="발효시각 : 2020-07-07 06:00"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="3dp"
+        android:background="#EAEAEA"/>
+</LinearLayout>

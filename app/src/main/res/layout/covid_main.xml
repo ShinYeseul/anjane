@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".covid.COVID">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/anjane"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:fontFamily="@font/nanumb"
+                android:gravity="center"
+                android:text="코로나19"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/covid_fram"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        app:layout_constraintBottom_toTopOf="@+id/covidNavi" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/covidNavi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        app:itemIconTint="@drawable/post_item_color"
+        app:itemTextColor="@drawable/post_item_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/covid_menu"
+        tools:layout_editor_absoluteX="8dp" />
+</LinearLayout>

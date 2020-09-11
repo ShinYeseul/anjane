@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:background="#ffffff">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:clickable="false" />
+        <ImageView
+            android:id="@+id/settingbt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitEnd"
+            android:clickable="false"
+            app:srcCompat="@drawable/setting" />
+        <ImageView
+            android:id="@+id/closebt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:scaleType="fitEnd"
+            android:clickable="false"
+            app:srcCompat="@drawable/close" />
+    </LinearLayout>
+
+    <!--자연재난-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+            <!--자연재난 텍스트뷰-->
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumb"
+                android:layout_marginTop="10dp"
+                android:text="자연재난"
+                android:textColor="@color/lblack"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <!--자연재난 아이콘들-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <!--강풍-->
+            <LinearLayout
+                android:id="@+id/windlayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/wind_imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    app:srcCompat="@drawable/menu_wind" />
+                <TextView
+                    android:id="@+id/wind_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumb"
+                    android:gravity="center"
+                    android:text="강풍"
+                    android:textColor="@color/lblack" />
+            </LinearLayout>
+
+            <!--호우-->
+            <LinearLayout
+                android:id="@+id/rainlayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/rain_imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    app:srcCompat="@drawable/menu_rain" />
+                <TextView
+                    android:id="@+id/rain_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumb"
+                    android:gravity="center"
+                    android:text="호우"
+                    android:textColor="@color/lblack" />
+            </LinearLayout>
+
+            <!--대설-->
+            <LinearLayout
+                android:id="@+id/snowlayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/snow_imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    app:srcCompat="@drawable/menu_snow" />
+                <TextView
+                    android:id="@+id/snow_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumb"
+                    android:gravity="center"
+                    android:text="대설"
+                    android:textColor="@color/lblack" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <!--미세먼지-->
+            <LinearLayout
+                android:id="@+id/dustlayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/dust_imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    app:srcCompat="@drawable/menu_dust" />
+                <TextView
+                    android:id="@+id/dust_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumb"
+                    android:gravity="center"
+                    android:text="미세먼지"
+                    android:textColor="@color/lblack" />
+            </LinearLayout>
+
+            <!--지진-->
+            <LinearLayout
+                android:id="@+id/earthlayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    app:srcCompat="@drawable/menu_earthquake" />
+                <TextView
+                    android:id="@+id/earthquakes_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumb"
+                    android:gravity="center"
+                    android:text="지진"
+                    android:textColor="@color/lblack" />
+            </LinearLayout>
+
+            <!--빈 화면-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+            <!--사회재난 텍스트뷰-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumb"
+                android:layout_marginTop="10dp"
+                android:text="사회재난"
+                android:textColor="@color/lblack"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <!--자연재난 아이콘들-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <!--화재-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/fire_imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:clickable="false"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/menu_fire" />
+                <TextView
+                    android:id="@+id/fire_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="화재"
+                    android:fontFamily="@font/nanumb"
+                    android:textColor="@color/lblack"/>
+            </LinearLayout>
+            <!--교통사고-->
+            <LinearLayout
+                android:id="@+id/carlayout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/car_imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    app:srcCompat="@drawable/menu_car" />
+                <TextView
+                    android:id="@+id/car_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="교통사고"
+                    android:fontFamily="@font/nanumb"
+                    android:textColor="@color/lblack" />
+            </LinearLayout>
+
+            <!--코로나19-->
+            <LinearLayout
+                android:id="@+id/covidlayout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/covid_imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:clickable="false"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/menu_covid" />
+                <TextView
+                    android:id="@+id/covid_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="코로나19"
+                    android:fontFamily="@font/nanumb"
+                    android:textColor="@color/lblack"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--나머지-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/wh"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/actionlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/menu_yellobt"
+            android:orientation="horizontal">
+            <!--행동요령-->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:clickable="false"
+                app:srcCompat="@drawable/menu_action" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:fontFamily="@font/nanumb"
+                android:text="행동요령"
+                android:textColor="@color/lblack"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:clickable="false"
+                app:srcCompat="@drawable/right" />
+        </LinearLayout>
+
+        <!--나머지-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/shelterlayout"
+            android:background="@drawable/menu_yellobt"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <!--대피소-->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="50dp"
+                android:clickable="false"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/menu_shelter" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="대피소 조회"
+                android:textSize="20dp"
+                android:fontFamily="@font/nanumb"
+                android:textColor="@color/lblack"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:clickable="false"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/right" />
+        </LinearLayout>
+
+        <!--나머지-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/postlayout"
+            android:layout_margin="10dp"
+            android:background="@drawable/menu_yellobt"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <!--신고-->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:clickable="false"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/menu_board" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="신고"
+                android:textSize="20dp"
+                android:fontFamily="@font/nanumb"
+                android:textColor="@color/lblack"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:clickable="false"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/right" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

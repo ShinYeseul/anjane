@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/wh"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerlayout_rain"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/imgraintest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="이미지"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/rain_skyblue"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/rain_warnStresstest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="호우주의보"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/nanumb"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/rain_warnStress_infotest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumb"
+                android:text="호우량 60mm이상"
+                android:textColor="@color/blue"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/rain_areaCodetest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="부산"
+                android:textColor="@color/lblack"
+                android:fontFamily="@font/nanumb"
+                android:textSize="15dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/rain_tmFctest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2020-07-07 06:00"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/nanumb"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/raindropdown"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/uparrow"
+            android:layout_height="20dp"
+            android:background="@drawable/downarrow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/detaillayout">
+        <TextView
+            android:id="@+id/rain_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:paddingBottom="2dp"
+            android:fontFamily="@font/nanumb"
+            android:layout_marginLeft="87dp"
+            android:text="지역이름: 부산"/>
+        <TextView
+            android:id="@+id/rain_startTime"
+            android:layout_width="match_parent"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/nanumb"
+            android:layout_marginLeft="87dp"
+            android:layout_height="wrap_content"
+            android:text="발효시각: 2020-07-07 06:00"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="3dp"
+        android:background="#EAEAEA"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerlayout_rain2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/imgrain2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="이미지"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:src="@drawable/rain_blue"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/rain_warnStress2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="호우 경보"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/nanumb"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/rain_warnStress_info2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumb"
+                android:text="호우량 90mm이상"
+                android:textColor="@color/blue"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/rain_areaCode2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="천안"
+                android:textColor="@color/lblack"
+                android:fontFamily="@font/nanumb"
+                android:textSize="15dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/rain_tmFc2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2020-07-07 05:00"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/nanumb"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/raindropdown2"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/uparrow2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/downarrow" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/detaillayout2">
+        <TextView
+            android:id="@+id/rain_area2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/nanumb"
+            android:layout_marginLeft="87dp"
+            android:text="지역이름: 천안"/>
+        <TextView
+            android:id="@+id/rain_startTime2"
+            android:layout_width="match_parent"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/nanumb"
+            android:layout_marginLeft="87dp"
+            android:layout_height="wrap_content"
+            android:text="발효시각: 2020-07-07 05:00"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="3dp"
+        android:background="#EAEAEA"/>
+</LinearLayout>

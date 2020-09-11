@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CivilDefenseShelter>
+  <head>
+    <totalCount>17103</totalCount>
+    <numOfRows>7</numOfRows>
+    <pageNo>1</pageNo>
+    <type>XML</type>
+    <RESULT>
+      <resultCode>INFO-0</resultCode>
+      <resultMsg>정상</resultMsg>
+    </RESULT>
+  </head>
+  <row>
+    <sn>263770</sn>
+    <facility_name>성저7단지 지하주차장</facility_name>
+    <gubun_cd>0</gubun_cd>
+    <sisul_rddr>경기도 고양시 일산서구 성저로 47 (대화동, 성저마을7단지건영빌라)</sisul_rddr>
+    <sisul_addr>경기도 고양시 일산서구 대화동 2081번지</sisul_addr>
+    <b_addr_cd>4100100</b_addr_cd>
+    <longitude>126.751861</longitude>
+    <latitude>37.683331</latitude>
+    <sisul_scal>8203</sisul_scal>
+    <shelter_psbl></shelter_psbl>
+    <is_open></is_open>
+    <use_kind></use_kind>
+    <mng_tel></mng_tel>
+    <mng_org></mng_org>
+    <modify_date></modify_date>
+  </row>
+  <row>
+    <sn>263771</sn>
+    <facility_name>성저8단지 지하주차장</facility_name>
+    <gubun_cd>0</gubun_cd>
+    <sisul_rddr>경기도 고양시 일산서구 성저로 75 (대화동, 성저마을8단지건영빌라)</sisul_rddr>
+    <sisul_addr>경기도 고양시 일산서구 대화동 2073번지</sisul_addr>
+    <b_addr_cd>4100100</b_addr_cd>
+    <longitude>126.754908</longitude>
+    <latitude>37.685297</latitude>
+    <sisul_scal>1980</sisul_scal>
+    <shelter_psbl></shelter_psbl>
+    <is_open></is_open>
+    <use_kind></use_kind>
+    <mng_tel></mng_tel>
+    <mng_org></mng_org>
+    <modify_date></modify_date>
+  </row>
+  <row>
+    <sn>263772</sn>
+    <facility_name>성저9단지(건영</facility_name>
+    <gubun_cd>0</gubun_cd>
+    <sisul_rddr>경기도 고양시 일산서구 성저로 91 (대화동, 성저마을9단지건영빌라)</sisul_rddr>
+    <sisul_addr>경기도 고양시 일산서구 대화동 1997번지</sisul_addr>
+    <b_addr_cd>4100100</b_addr_cd>
+    <longitude>126.758119</longitude>
+    <latitude>37.685422</latitude>
+    <sisul_scal>7491</sisul_scal>
+    <shelter_psbl></shelter_psbl>
+    <is_open></is_open>
+    <use_kind></use_kind>
+    <mng_tel></mng_tel>
+    <mng_org></mng_org>
+    <modify_date></modify_date>
+  </row>
+  <row>
+    <sn>263773</sn>
+    <facility_name>성저10단지 지하주차장</facility_name>
+    <gubun_cd>0</gubun_cd>
+    <sisul_rddr>경기도 고양시 일산서구 성저로 107 (대화동, 성저마을10단지건영빌라)</sisul_rddr>
+    <sisul_addr>경기도 고양시 일산서구 대화동 2000번지</sisul_addr>
+    <b_addr_cd>4100100</b_addr_cd>
+    <longitude>126.759206</longitude>
+    <latitude>37.684933</latitude>
+    <sisul_scal>4126</sisul_scal>
+    <shelter_psbl></shelter_psbl>
+    <is_open></is_open>
+    <use_kind></use_kind>
+    <mng_tel></mng_tel>
+    <mng_org></mng_org>
+    <modify_date></modify_date>
+  </row>
+  <row>
+    <sn>263774</sn>
+    <facility_name>성저11단지 지하주차장</facility_name>
+    <gubun_cd>0</gubun_cd>
+    <sisul_rddr>경기도 고양시 일산서구 성저로 121 (대화동, 성저마을11단지건영빌라)</sisul_rddr>
+    <sisul_addr>경기도 고양시 일산서구 대화동 2002번지</sisul_addr>
+    <b_addr_cd>4100100</b_addr_cd>
+    <longitude>126.761078</longitude>
+    <latitude>37.684758</latitude>
+    <sisul_scal>4644</sisul_scal>
+    <shelter_psbl></shelter_psbl>
+    <is_open></is_open>
+    <use_kind></use_kind>
+    <mng_tel></mng_tel>
+    <mng_org></mng_org>
+    <modify_date></modify_date>
+  </row>
+  <row>
+    <sn>263775</sn>
+    <facility_name>성저12단지 지하주차장</facility_name>
+    <gubun_cd>0</gubun_cd>
+    <sisul_rddr>경기도 고양시 일산서구 일산로636번길 52 (대화동, 성저마을12단지건영빌라)</sisul_rddr>
+    <sisul_addr>경기도 고양시 일산서구 대화동 2003번지</sisul_addr>
+    <b_addr_cd>4100100</b_addr_cd>
+    <longitude>126.760306</longitude>
+    <latitude>37.683575</latitude>
+    <sisul_scal>2456</sisul_scal>
+    <shelter_psbl></shelter_psbl>
+    <is_open></is_open>
+    <use_kind></use_kind>
+    <mng_tel></mng_tel>
+    <mng_org></mng_org>
+    <modify_date></modify_date>
+  </row>
+  <row>
+    <sn>263776</sn>
+    <facility_name>성저13단지 지하주차장</facility_name>
+    <gubun_cd>0</gubun_cd>
+    <sisul_rddr>경기도 고양시 일산서구 일산로636번길 24 (대화동, 성저마을13단지건영빌라)</sisul_rddr>
+    <sisul_addr>경기도 고양시 일산서구 대화동 2026번지</sisul_addr>
+    <b_addr_cd>4100100</b_addr_cd>
+    <longitude>126.759236</longitude>
+    <latitude>37.682497</latitude>
+    <sisul_scal>3000</sisul_scal>
+    <shelter_psbl></shelter_psbl>
+    <is_open></is_open>
+    <use_kind></use_kind>
+    <mng_tel></mng_tel>
+    <mng_org></mng_org>
+    <modify_date></modify_date>
+  </row>
+</CivilDefenseShelter>
+

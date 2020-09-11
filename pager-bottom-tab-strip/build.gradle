@@ -1,0 +1,41 @@
+// plugins {
+//     id "com.jfrog.bintray" version "1.8.4"
+//     id "com.github.dcendents.android-maven" version "2.1"
+// }
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+    }
+    ext {
+        supportLibraryVersion = '27.1.0'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation "com.android.support:support-annotations:27.1.0"
+    implementation "com.android.support:support-v4:27.1.0"
+}
+
+
+//apply from: 'upload_to_bintray.gradle'
+
+
+

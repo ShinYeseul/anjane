@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">안전이</string>
+    <string name="navigation_drawer_open">Open nagigation drawer</string>
+    <string name="navigation_drawer_close">Close nagigation drawer</string>
+
+    <string name="menu_nature">자연재난</string>
+    <string name="menu_society">사회재난</string>
+    <string name="menu_shelter">대피소</string>
+    <string name="menu_action">행동요령</string>
+    <string name="menu_report">신고</string>
+    <string name="menu_map">지도범례</string>
+
+    <string name="success_signup">회원가입 성공</string>
+    <string name="failed_signup">회원가입 실패</string>
+    <string name="success_login">로그인 성공</string>
+    <string name="failed_login">로그인 실패</string>
+
+    <!--스피너-->
+    <string-array name="spinner_do">
+        <item>위험정보</item>
+        <item>편의정보</item>
+        <item>사고발생현황</item>
+        <item>기타</item>
+    </string-array>
+    <string-array name="spinner_do_danger">
+        <item>화재위험</item>
+        <item>교통위험</item>
+        <item>보행위험</item>
+        <item>붕괴위험</item>
+        <item>기타위험</item>
+    </string-array>
+    <string-array name="spinner_do_convenience">
+        <item>화장실</item>
+        <item>기타</item>
+    </string-array>
+    <string-array name="spinner_do_accident">
+        <item>화재</item>
+        <item>교통</item>
+        <item>기타</item>
+    </string-array>
+    <string-array name="spinner_do_other">
+        <item>기타</item>
+    </string-array>
+
+    <string name="MENU1">Shop</string>
+    <string name="MENU2">Gifts</string>
+    <string name="MENU3">dd</string>
+
+    <string name="heading_map">Map</string>
+    <string name="heading_recent">List</string>
+    <string name="heading_my">Me</string>
+    <string name="your_string_here">This is an <u>underline</u>.</string>
+    <string name="heading_my_top_posts">My Top Posts</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="permission_1">[설정] > [권한] 에서 권한을 허용할 수 있습니다.</string>
+    <string name="permission_2">사진 및 파일을 저장하기 위하여 접근 권한이 필요합니다.</string>
+</resources>

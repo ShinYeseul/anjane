@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <net.daum.mf.map.api.MapView
+                android:id="@+id/mask_map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_marginTop="90dp"
+                android:layout_marginBottom="150dp"
+                android:layout_marginLeft="20dp"
+                app:backgroundTint="@color/wh"
+                android:src="@drawable/locationanjeoni" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shelter_edit_border"/>
+            <EditText
+                android:id="@+id/edit_mask"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"/>
+            <Button
+                android:id="@+id/search_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/mfglass"
+                android:onClick="onMapSearch"
+                tools:ignore="OnClick" />
+            <Button
+                android:id="@+id/searchbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="280dp"
+                android:background="@drawable/shelter_roundbutton"
+                android:drawableLeft="@drawable/refresh"
+                android:paddingLeft="15dp"
+                android:text="   이 지역 검색하기    "
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <LinearLayout
+
+                android:id="@+id/Sub_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="7dp"
+                android:background="#E6FFFFFF"
+                android:backgroundTintMode="multiply"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/anjane"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/Sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:text="제목"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Sub_layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:orientation="horizontal"
+                    tools:ignore="DuplicateIds">
+                    <TextView
+                        android:id="@+id/Sub_title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="마스크 잔여수량" />
+                    <TextView
+                        android:id="@+id/Sub_text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="7dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="TextView"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Sub_layout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:orientation="horizontal"
+                    tools:ignore="DuplicateIds">
+                    <TextView
+                        android:id="@+id/Sub_title3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="최근 입고날짜" />
+                    <TextView
+                        android:id="@+id/Sub_text3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="7dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="left"
+                        android:text="TextView"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

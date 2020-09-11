@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/wh"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerlayout_wind"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/imgwind"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/wind_warnStress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="강풍주의보 or 강풍경보"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/nanumb"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/wind_warnStress_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/blue"
+                android:fontFamily="@font/nanumb"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/wind_areaCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="지역"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/nanumb"
+                android:textSize="15dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/wind_tmFc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="발표시각"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/nanumb"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/winddropdown"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:background="@drawable/downarrow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="41dp"
+        android:orientation="vertical"
+        android:id="@+id/detaillayout_wind">
+        <TextView
+            android:id="@+id/wind_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/nanumb"
+            android:text="강풍 지역이름"/>
+        <TextView
+            android:id="@+id/wind_startTime"
+            android:layout_width="match_parent"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/nanumb"
+            android:layout_height="wrap_content"
+            android:text="강풍 발표시 발효시각"/>
+    </LinearLayout>
+</LinearLayout>

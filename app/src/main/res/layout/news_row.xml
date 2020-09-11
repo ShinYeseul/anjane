@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/upper_shadow_todo"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/ivNews"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/textViewNewsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="newsTitle"
+                    android:fontFamily="@font/nanumb"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/textViewNewsTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="newsTime"
+                    android:fontFamily="@font/nanum"
+                    android:textColor="@color/lblack"
+                    android:layout_marginTop="5dp"
+                    android:textSize="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

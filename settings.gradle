@@ -1,0 +1,3 @@
+include ':app', ':navigationtabba'
+rootProject.name='anjane'
+project(':navigationtabba').projectDir = new File('navigationtabbar')

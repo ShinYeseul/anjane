@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".action.Car.CarAction">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardUseCompatPadding="true">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                        <ImageView
+                                            android:id="@+id/car_image1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.8"
+                                            android:background="@color/anjane"
+                                            android:src="@drawable/before_car_aci1" />
+
+                                        <TextView
+                                            android:layout_margin="15dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="0.2"
+                                            android:textSize="12dp"
+                                            android:text="골목 주행시 서행하며, 주변을 잘 살펴야 합니다."/>
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView><androidx.cardview.widget.CardView
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardUseCompatPadding="true">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                                <ImageView
+                                    android:id="@+id/car_image2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.8"
+                                    android:background="@color/anjane"
+                                    android:src="@drawable/before_car_aci2" />
+
+                                <TextView
+                                    android:layout_margin="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.2"
+                                    android:textSize="12dp"
+                                    android:text="무단횡단을 하지말고, 운전자는 항상 전방을 주시해야합니다." />
+                        </LinearLayout>
+                </androidx.cardview.widget.CardView><androidx.cardview.widget.CardView
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardUseCompatPadding="true">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                                <ImageView
+                                    android:id="@+id/car_image3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.8"
+                                    android:background="@color/anjane"
+                                    android:src="@drawable/before_car_aci3" />
+
+                                <TextView
+                                    android:layout_margin="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.2"
+                                    android:textSize="12dp"
+                                    android:text="버스나 차에서 내릴 때, 오토바이나 자전거를 조심해야 합니다." />
+                        </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardUseCompatPadding="true">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    >
+
+                                        <ImageView
+                                            android:id="@+id/car_image4"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.8"
+                                            android:background="@color/anjane"
+                                            android:src="@drawable/before_car_aci4" />
+
+                                        <TextView
+                                            android:layout_margin="15dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="0.3"
+                                            android:textSize="12dp"
+
+                                            android:text="운전자는 항상 사이드미러를 확인하고 방어운전을 해야 합니다." />
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardUseCompatPadding="true">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    >
+
+                                        <ImageView
+                                            android:id="@+id/car_image5"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.8"
+                                            android:background="@color/anjane"
+                                            android:src="@drawable/before_car_aci5" />
+
+                                        <TextView
+                                            android:layout_margin="15dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="0.3"
+                                            android:textSize="12dp"
+
+                                            android:text="교통사고 예방을 위해 안전거리를 유지합니다." />
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardUseCompatPadding="true">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    >
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="0.8"
+                                            android:background="@color/anjane"
+                                            android:src="@drawable/before_car_aci6" />
+
+                                        <TextView
+                                            android:layout_margin="15dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="0.1"
+                                            android:textSize="12dp"
+                                            android:text="차량 탑승자는 모두 안전벨트를 해야 합니다." />
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardUseCompatPadding="true">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    >
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:id="@+id/car_image7"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="0.8"
+                                            android:background="@color/anjane"
+                                            android:src="@drawable/before_car_aci7" />
+
+                                        <TextView
+                                            android:layout_margin="15dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="0.1"
+                                            android:textSize="12dp"
+                                            android:text="교통사고 예방을 위해 양보운전을 생활화해야합니다." />
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+        </ScrollView>
+
+</LinearLayout>

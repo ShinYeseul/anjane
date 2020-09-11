@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/situration"
+        android:enabled="true"
+        android:icon="@drawable/post_map"
+        android:title="상황"/>
+
+    <item
+        android:id="@+id/mask"
+        android:enabled="true"
+        android:icon="@drawable/post_list"
+        android:title="마스크"/>
+
+</menu>

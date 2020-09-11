@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".action.Snow.SnowAction">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardUseCompatPadding="true">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1.3"
+                                            android:background="@color/anjane"
+                                            android:src="@drawable/before_snow1" />
+                                        <TextView
+                                            android:layout_margin="15dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="0.4"
+                                            android:textSize="12dp"
+                                            android:text="내가 거주하거나 생활하는 지역의 눈사태, 붕괴위험시설물 등 재해위험요소는 과거 피해 자료를 통해서 사전에 가족이나 이웃과 함께 확인합니다." />
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView><androidx.cardview.widget.CardView
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardUseCompatPadding="true">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1.3"
+                                    android:background="@color/anjane"
+                                    android:src="@drawable/before_snow2" />
+
+                                <TextView
+                                    android:layout_margin="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.4"
+                                    android:textSize="12dp"
+                                    android:text=" 산간 고립 우려 지역에서는 식량,연료 등 비상용품을 준비한다." />
+                        </LinearLayout>
+                </androidx.cardview.widget.CardView><androidx.cardview.widget.CardView
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardUseCompatPadding="true">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1.3"
+                                    android:background="@color/anjane"
+                                    android:src="@drawable/before_snow3" />
+
+                                <TextView
+                                    android:layout_margin="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.4"
+                                    android:textSize="12dp"
+                                    android:text="스노체인, 염화칼슘, 삽 등 자동차 월동용품을 준비합니다." />
+                        </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+        </ScrollView>
+
+</LinearLayout>

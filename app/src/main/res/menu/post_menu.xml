@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/postMap"
+        android:enabled="true"
+        android:icon="@drawable/post_map"
+        android:title="지도"/>
+
+    <item
+        android:id="@+id/postList"
+        android:enabled="true"
+        android:icon="@drawable/post_list"
+        android:title="신고리스트"/>
+    
+    <item
+        android:id="@+id/postMy"
+        android:enabled="true"
+        android:icon="@drawable/post_my"
+        android:title="마이페이지"/>
+</menu>

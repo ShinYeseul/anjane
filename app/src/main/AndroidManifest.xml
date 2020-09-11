@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.test.anjane">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- camera, gallery -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+
+    <application
+        android:name="androidx.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="HardcodeDebugMode">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="41f98b6150010220444505ff9bdf4bf6" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDRUtdly86PyT5Wee0yrvxuZRRLv2wy9kU" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="luminous.ACTION_MULTIPLE_PICK" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".service.RealService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.RestartService"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".service.RebootRecever"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".login.loginactivitiy" />
+        <activity android:name=".join.joinactivitiy" />
+        <activity android:name=".findpassword.FindActivity" />
+        <activity android:name=".rain.Rain" />
+        <activity android:name=".snow.Snow" />
+        <activity android:name=".wind.Wind" />
+        <activity android:name=".earthquakes.Earthquakes" />
+        <activity android:name=".action.Action" />
+        <activity android:name=".post.Post" />
+        <activity android:name=".Setting" />
+        <activity android:name=".Legend" />
+        <activity android:name=".login.login" />
+        <activity android:name=".post.MyPostList" />
+        <activity android:name=".weather.Weather" />
+        <activity android:name=".post.Edit" />
+        <activity android:name=".post.Photo" />
+        <activity android:name=".covid.COVID" />
+        <activity android:name=".action.Wind.WindAction" />
+        <activity android:name=".firebase.DustFirebase"></activity>
+        <activity android:name=".firebase.RainFirebase"/>
+        <activity android:name=".firebase.EarthquakesFirebase"/>
+        <activity android:name=".service.ServiceActivity"/>
+        <activity android:name=".firebase.SnowFirebase"/>
+        <activity android:name=".firebase.WindFirebase"/>
+        <activity android:name=".action.Rain.RainAction"/>
+        <activity android:name=".action.Snow.SnowAction"/>
+        <activity android:name=".dust.DustActivity"/>
+        <activity android:name=".action.DustAction"/>
+        <activity android:name=".action.earthquakes.EarthFragmentAdapter"/>
+        <activity android:name=".action.Car.CarAction"/>
+        <activity android:name=".WindTest"/>
+        <activity android:name=".RainTest"/>
+        <activity android:name=".shelter.Shelter"/>
+        <activity android:name=".Car"/>
+        <activity android:name=".post.DaumWebViewActivity"/>
+        <activity android:name=".post.PostDetailActivity"/>
+
+        <!-- 사진 촬영을 위한 provide -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.test.anjane.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

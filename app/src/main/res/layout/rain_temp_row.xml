@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/wh"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerlayout_rain"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/imgrain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="이미지" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/rain_warnStress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="호우주의보 or 호우경보"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/nanumb"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/rain_warnStress_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumb"
+                android:text="호우량 60mm이상"
+                android:textColor="@color/blue"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/rain_areaCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="지역"
+                android:textColor="@color/lblack"
+                android:fontFamily="@font/nanumb"
+                android:textSize="15dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/rain_tmFc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="발표시각"
+                android:textColor="@color/gr"
+                android:fontFamily="@font/nanumb"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/raindropdown"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/uparrow"
+            android:layout_height="20dp"
+            android:background="@drawable/downarrow" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/detaillayout">
+    <TextView
+        android:id="@+id/rain_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/nanumb"
+        android:layout_marginLeft="39dp"
+        android:text="호우 지역이름"/>
+    <TextView
+        android:id="@+id/rain_startTime"
+        android:layout_width="match_parent"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/nanumb"
+        android:layout_marginLeft="39dp"
+        android:layout_height="wrap_content"
+        android:text="호우 발표시 발효시각"/>
+    </LinearLayout>
+
+</LinearLayout>

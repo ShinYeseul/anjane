@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/wh"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerlayout_snow"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/imgsnow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/snow_warnStress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="대설주의보 or 대설경보"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/nanumb"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/snow_warnStress_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="적설량 5cm이상"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/nanumb"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/snow_areaCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="지역"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/nanumb"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/snow_tmFc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="발표시각"
+            android:textColor="@color/gr"
+            android:fontFamily="@font/nanumb"
+            android:textSize="15dp" />
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/snowdropdown"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:id="@+id/ivarrow"
+            android:background="@drawable/downarrow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="41dp"
+        android:orientation="vertical"
+        android:id="@+id/detaillayout_snow">
+    <TextView
+        android:id="@+id/snow_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/nanumb"
+        android:text="대설 지역이름"/>
+    <TextView
+        android:id="@+id/snow_startTime"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/nanumb"
+        android:text="대설 발표시 발효시각"/>
+    </LinearLayout>
+</LinearLayout>

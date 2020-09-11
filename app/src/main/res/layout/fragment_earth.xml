@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    card_view:cardCornerRadius="20dp"
+                    card_view:cardUseCompatPadding="true"
+                    android:orientation="vertical">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="5"
+                                    app:riv_corner_radius_top_left="20dp"
+                                    app:riv_corner_radius_top_right="20dp"
+                                    android:background="@color/anjane"
+                                    android:src="@drawable/earthquakes_before1"
+                                    app:riv_border_color="#333333"
+                                    app:riv_mutate_background="true"
+                                    app:riv_oval="false" />
+
+                                <TextView
+                                    android:layout_margin="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.5"
+                                    android:textSize="12dp"
+                                    android:text="집 안에서 떨어지기 쉬운 물건을 고정합니다."/>
+                        </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:app="http://schemas.android.com/tools"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="20dp"
+                    card_view:cardUseCompatPadding="true">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_margin="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12dp"
+                                    android:text="그릇장 안의 물건들이 쏟아지지 않도록 문을 고정해 둡니다." />
+                        </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    card_view:cardCornerRadius="20dp"
+                    card_view:cardUseCompatPadding="true"
+                    android:orientation="vertical">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="5"
+                                    app:riv_corner_radius_top_left="20dp"
+                                    app:riv_corner_radius_top_right="20dp"
+                                    android:background="@color/anjane"
+                                    android:src="@drawable/earthquakes_before2"
+                                    app:riv_border_color="#333333"
+                                    app:riv_mutate_background="true"
+                                    app:riv_oval="false" />
+
+                                <TextView
+                                    android:layout_margin="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.5"
+                                    android:textSize="12dp"
+                                    android:text="대피소까지의 대피경로를 알아둡니다."/>
+                        </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    card_view:cardCornerRadius="20dp"
+                    card_view:cardUseCompatPadding="true"
+                    android:orientation="vertical">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="5"
+                                    app:riv_corner_radius_top_left="20dp"
+                                    app:riv_corner_radius_top_right="20dp"
+                                    android:background="@color/anjane"
+                                    android:src="@drawable/earthquakes_before3"
+                                    app:riv_border_color="#333333"
+                                    app:riv_mutate_background="true"
+                                    app:riv_oval="false" />
+                                <TextView
+                                    android:layout_margin="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.5"
+                                    android:textSize="12dp"
+                                    android:text="건물이나 담장은 수시로 점검하고,위험한 부분은 안전하게 수리합니다." />
+                        </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:app="http://schemas.android.com/tools"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="20dp"
+                    card_view:cardUseCompatPadding="true">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_margin="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12dp"
+                                    android:text="건물의 균열을 발견하면 전문가에게 문의하여 보수하고 보강합니다. " />
+                        </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    card_view:cardCornerRadius="20dp"
+                    card_view:cardUseCompatPadding="true"
+                    android:orientation="vertical">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="5"
+                                    app:riv_corner_radius_top_left="20dp"
+                                    app:riv_corner_radius_top_right="20dp"
+                                    android:background="@color/anjane"
+                                    android:src="@drawable/earthquakes_before4"
+                                    app:riv_border_color="#333333"
+                                    app:riv_mutate_background="true"
+                                    app:riv_oval="false" />
+
+                                <TextView
+                                    android:layout_margin="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.5"
+                                    android:textSize="12dp"
+                                    android:text="평상시 가족회의를 통하여 위급한 상황에 대비합니다."/>
+                        </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:app="http://schemas.android.com/tools"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="20dp"
+                    card_view:cardUseCompatPadding="true">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                                <TextView
+                                    android:layout_margin="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12dp"
+                                    android:text="응급처치하는 방법을 반복적으로 훈련하여 익혀 둡니다." />
+                        </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    card_view:cardCornerRadius="20dp"
+                    card_view:cardUseCompatPadding="true"
+                    android:orientation="vertical">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="5"
+                                    app:riv_corner_radius_top_left="20dp"
+                                    app:riv_corner_radius_top_right="20dp"
+                                    android:background="@color/anjane"
+                                    android:src="@drawable/earthquakes_before5"
+                                    app:riv_border_color="#333333"
+                                    app:riv_mutate_background="true"
+                                    app:riv_oval="false" />
+
+
+
+                                <TextView
+                                    android:layout_margin="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.5"
+                                    android:textSize="12dp"
+                                    android:text="지진에 대비하여 비상용품을 준비해 두고, 보관 장소와 사용방법을 알아 둡니다." />
+                        </LinearLayout>
+                </androidx.cardview.widget.CardView>
+        </LinearLayout>
+</ScrollView>
